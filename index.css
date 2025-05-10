@@ -1,0 +1,311 @@
+/* universal settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+body,
+p {
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Base Layout */
+/* Nav styles */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Header styles */
+.header {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: space-between;
+}
+
+/* logo styles */
+.logo {
+  width: 10%;
+  margin-top: -30px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* nav bar styles */
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar li {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-bar li a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+.nav-bar li a:active {
+  color: purple;
+}
+*/
+
+/* home page styles */
+.home {
+  background-color: #fdfdfd;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide {
+  display: none;
+  padding: 2rem;
+  width: 70%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.slide h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.slide.current {
+  display: block;
+}
+
+.objective {
+  text-align: left;
+}
+
+.slide-arrows {
+  display: flex;
+  justify-content: center;
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
+
+/* Event Styles */
+.event-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #333;
+  color: #fff;
+}
+
+.event-list {
+  display: grid;
+  gap: 1rem;
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.event-card h3 {
+  padding: 0.8rem;
+}
+
+.event-card img {
+  width: 50%;
+}
+
+.event-card p {
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+/* registration form */
+.community {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+/* Donations/Membership styles */
+.donations {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
+
+.donations a {
+  color: #1d3557;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* contact section */
+.contact-section {
+  background-color: #fdfdfd;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 2px solid #eee;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-info i {
+  color: #1d3557;
+  margin-right: 0.5rem;
+}
+
+.contact-info a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #1d3557;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e63946;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-bar ul {
+    gap: 5px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 35%;
+    margin: -65px auto -20px;
+  }
+
+  .slide {
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Optional: light background for readability */
+    border-radius: 8px;
+  }
+}
